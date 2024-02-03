@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel = "stylesheet" href = "quizApp.css">
+</head>
+<body>
+    <h1>Interactive Quiz</h1>
+
+    <div class="container">
+        <form>
+        <div class="question1 questions">
+            <p>Q1. What is the short form of "Hypertext Markup Language"?</p>
+            
+            <label for = "ques1Option1">
+                <input type = "radio" name = "question1" id = "ques1Option1" class = "options" value = "HTML">
+                HTML
+            </label>
+            <br>
+            
+            <label for = "ques1Option2">
+                <input type = "radio" name = "question1" id = "ques1Option2" class = "options" value = "HTTP">
+                HTTP</label>
+            <br>
+            
+            <label for = "ques1Option3">
+                <input type = "radio" name = "question1" id = "ques1Option3" class = "options" value = "HML">
+                HML</label>
+            <br>
+            
+            <label for = "ques1Option4">
+                <input type = "radio" name = "question1" id = "ques1Option4" class = "options" value = "N/A">
+                No short form exists</label>
+            <p id = "noAns1" class = "noAns">****Please Select an answer****</p>
+        </div>
+
+        <div class="question2 questions">
+            <p>Q2.___ is a high speed memory that is much faster than the main memory?</p>
+            <label for = "ques2Option1">
+                <input type = "radio" name = "question2" id = "ques2Option1" class = "options" value = "Internal">
+                Internal</label>
+            <br>
+            
+            <label for = "ques2Option2">
+                <input type = "radio" name = "question2" id = "ques2Option2" class = "options" value = "External">
+                External</label>
+            <br>
+            
+            <label for = "ques2Option3">
+                <input type = "radio" name = "question2" id = "ques2Option3" class = "options" value = "Cache">
+                Cache</label>
+            <br>
+            
+            <label for = "ques2Option4">
+                <input type = "radio" name = "question2" id = "ques2Option4" class = "options" value = "Primary">
+                Primary</label>
+            
+            <p id = "noAns2" class = "noAns">****Please Select an answer****</p>
+        </div>
+
+        <div class="question3 questions">
+            <p>Q3. What is an assembler?</p>
+            <label for = "ques3Option1">
+                <input type = "radio" name = "question3" id = "ques3Option1" class = "options" value = "Language">
+                Language</label>
+            <br>
+            
+            <label for = "ques3Option2">
+                <input type = "radio" name = "question3" id = "ques3Option2" class = "options" value = "Symbol">
+                Symbol</label>
+            <br>
+            
+            <label for = "ques3Option3">
+                <input type = "radio" name = "question3" id = "ques3Option3" class = "options" value = "Program">
+                Program</label>
+            <br>
+            
+            <label for = "ques3Option4">
+                <input type = "radio" name = "question3" id = "ques3Option4" class = "options" value = "Person">
+                Person who assemble the parts</label>
+
+            <p id = "noAns3" class = "noAns">****Please Select an answer****</p>
+        </div>
+
+        <div class="question4 questions">
+            <p>Q4. ____ is the process of carrying out commands.
+            </p>
+            <label for = "ques4Option1">
+                <input type = "radio" name = "question4" id = "ques4Option1" class = "options" value = "Executing">
+                Executing</label>
+            <br>
+            
+            <label for = "ques4Option2">
+                <input type = "radio" name = "question4" id = "ques4Option2" class = "options" value = "Decoding">
+                Decoding</label>
+            <br>
+            
+            <label for = "ques4Option3">
+                <input type = "radio" name = "question4" id = "ques4Option3" class = "options" value = "Storing">
+                Storing</label>
+            <br>
+            
+            <label for = "ques4Option4">
+                <input type = "radio" name = "question4" id = "ques4Option4" class = "options" value = "Fetching">
+                Fetching</label>
+            <p id = "noAns4" class = "noAns">****Please Select an answer****</p>
+        </div>
+
+        <div class="question5 questions">
+            <p>Q5. What is the number of nodes in a full binary tree with depth 3?</p>
+            <label for = "quesOption1">
+                <input type = "radio" name = "question5" id = "quesOption1" class = "options" value = "5">
+                5</label>
+            <br>
+            <label for = "quesOption2">
+                <input type = "radio" name = "question5" id = "quesOption2" class = "options" value = "6">
+                6</label>
+            <br>
+            
+            <label for = "quesOption3">
+                <input type = "radio" name = "question5" id = "quesOption3" class = "options" value = "7">
+                7
+            </label>
+            <br>
+            
+            <label for = "quesOption4">
+                <input type = "radio" name = "question5" id = "quesOption4" class = "options" value="8">
+                8</label>
+            
+            <input type = "submit" name = "submit" id = "submit">
+            <p id = "noAns5" class = "noAns">****Please Select an answer****</p>
+
+        </div>
+        </form>
+        
+    </div>
+    <button id = "previous"> Previous </button>
+    <button id = "next"> Next </button>
+    <p id = "score"> Score: </p>
+
+    <script src = "quizLogic.js"></script>
+</body>
+</html>
