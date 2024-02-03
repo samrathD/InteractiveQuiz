@@ -18,7 +18,7 @@ let score = 0;
 
 //A function to compare user selected answers with actual answers
 let checkAnswer = (selectionSet,num)=>{
-    
+
     for( let selection of selectionSet){
         //Changing the selection type useful to display righ and wrong answer
          selection.type = "checkbox";
@@ -98,7 +98,6 @@ next.addEventListener("click",()=>{
     if(clicked>=4){
         return;
     }
-    
     else{
         //Checking if user selected an option
         let selectionSet = document.getElementsByName(`question${clicked+1}`);
@@ -112,6 +111,7 @@ next.addEventListener("click",()=>{
         clicked++;
         updateQuestion();
     }
+
 }
 )
 
@@ -119,6 +119,11 @@ let displayScore = document.querySelector("#score");
 submit.addEventListener("click",(evt)=>{
     //prevent form reloading the page
     evt.preventDefault();
+    if(checkSelect(selections5) == false){
+        //Displaying the message to choose an option
+        document.querySelector(`#noAns5`).style.display = "flex";
+        return;
+    }
     //Check answers for each question
     checkAnswer(selections1,0);
     checkAnswer(selections2,1);
